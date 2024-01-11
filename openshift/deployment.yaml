@@ -17,7 +17,7 @@ spec:
         - resources: {}
           readinessProbe:
             httpGet:
-              path: /
+              path: /about
               port: 8334
               scheme: HTTP
             initialDelaySeconds: 1
@@ -29,7 +29,7 @@ spec:
           name: filestash
           livenessProbe:
             httpGet:
-              path: /
+              path: /about
               port: 8334
               scheme: HTTP
             initialDelaySeconds: 1
